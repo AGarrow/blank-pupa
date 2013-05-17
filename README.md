@@ -55,6 +55,31 @@ In the `mkvirtualenv` command below, replace `pupa` with your project's name:
     cd blank-pupa
     pip install -r requirements.txt
 
+You should now be able to run:
+
+    pupa -h
+
+If not, use `python -m pupa.cli` in place of `pupa`.
+
+## Example Usage
+
+Create a `pupa_settings.py` file:
+
+    curl -o pupa_settings.py https://raw.github.com/opencivicdata/pupa/master/pupa/core/default_settings.py
+
+Read the documentation for:
+
+    pupa update -h
+
+Create an example jurisdiction:
+
+    mkdir example
+    curl -o example/__init__.py https://raw.github.com/opencivicdata/pupa/master/example/__init__.py
+
+You should now be able to run:
+
+    pupa update example
+
 ## Troubleshooting
 
 If you want to work on your project again later, remember to first load the virtual environment:
