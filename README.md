@@ -55,21 +55,6 @@ In the `mkvirtualenv` command below, replace `pupa` with your project's name:
     cd blank-pupa
     pip install -r requirements.txt
 
-You should now be able to run:
-
-    billy-update example --session-list --fastmode
-
-To get a list of sessions for the example jurisdiction of Toronto, Canada.
-
-Finally, run:
-
-    python site/manage.py syncdb
-    python site/manage.py runserver
-
-And in another shell:
-
-    open http://127.0.0.1:8000/
-
 ## Troubleshooting
 
 If you want to work on your project again later, remember to first load the virtual environment:
